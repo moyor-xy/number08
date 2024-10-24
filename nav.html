@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>树形导航菜单</title>
+    <style>
+        /* styles.css */
+        .tree-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tree-menu li {
+            margin-bottom: 5px;
+        }
+
+        .tree-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+        }
+
+        .tree-menu ul ul {
+            margin-left: 20px;
+            display: none;
+        }
+
+        .tree-menu li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="tree-menu">
+        <ul>
+            <li>
+                <a href="#">计算机图书</a>
+                <ul>
+                    <li>
+                        <a href="#">程序类图书</a>
+                        <ul>
+                            <li>
+                                <a href="">Java类图书</a>
+                                <ul>
+                                    <li><a href="">Java语言类图书</a></li>
+                                    <li>
+                                        <a href="">Java框架类图书</a>
+                                        <ul>
+                                            <li>
+                                                <a href="">Struts2图书</a>
+                                                <ul>
+                                                    <li><a href="">Struts1</a></li>
+                                                    <li><a href="">Struts2</a></li>
+                                                </ul>
+                                            <li><a href="">Hibernate图书入门</a></li>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">设计类图书</a>
+                <ul>
+                    <li><a href="">PS实例大全</a></li>
+                    <li><a href="">Flash基础入门</a></li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </nav>
+    <script>
+        // script.js
+
+    </script>
+</body>
+
+</html>
